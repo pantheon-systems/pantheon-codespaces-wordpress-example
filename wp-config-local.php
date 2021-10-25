@@ -1,11 +1,9 @@
 <?php
+//Local development environment config file
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
     if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
     $_SERVER['HTTPS']='on';
 }
-
-//Local development environment config file
-
 // ** Local MySQL settings ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'drupal');
